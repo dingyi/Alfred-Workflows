@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>domainr.dingis.me</string>
+	<key>connections</key>
+	<dict>
+		<key>79396A58-6CBD-47DB-A270-41AF2A4FA0E1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0393243C-36C6-4A1E-A8D1-342E37FC6894</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>dingyi</string>
+	<key>description</key>
+	<string>Search domains</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Domainr</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>keyword</key>
+				<string>domainr</string>
+				<key>runningsubtext</key>
+				<string>Please Wait</string>
+				<key>script</key>
+				<string>require_once('workflows.php');
+$w = new Workflows();
+$query = urlencode( "{query}" );
+$url = "http://domai.nr/api/json/search?q=$query";
+$domains = $w-&gt;request( $url );
+$domains = json_decode( $domains );
+
+function available($sub) {
+  if($sub == 'available' ) {
+    $icon = 'icons/green.png';
+  }
+  elseif( $sub == 'maybe' ) {
+    $icon = 'icons/yellow.png';
+  }
+  elseif( $sub == 'tld' ) {
+    $icon = 'icons/gray.png';
+  }
+  elseif( $sub == 'taken' || $sub == 'unavailable' ) {
+    $icon = 'icons/red.png';
+  }
+  return $icon;
+}
+
+foreach ( $domains-&gt;results as $domainr ) {
+  $w-&gt;result(
+    $domainr-&gt;register_url,
+    $domainr-&gt;register_url,
+    $domainr-&gt;domain.$domainr-&gt;path,
+    $domainr-&gt;availability,
+    available($domainr-&gt;availability)
+  );
+};
+
+echo $w-&gt;toxml();</string>
+				<key>subtext</key>
+				<string>Type a domain or any words to search</string>
+				<key>title</key>
+				<string>type a domain</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>79396A58-6CBD-47DB-A270-41AF2A4FA0E1</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>0393243C-36C6-4A1E-A8D1-342E37FC6894</string>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>0393243C-36C6-4A1E-A8D1-342E37FC6894</key>
+		<dict>
+			<key>ypos</key>
+			<real>90</real>
+		</dict>
+		<key>79396A58-6CBD-47DB-A270-41AF2A4FA0E1</key>
+		<dict>
+			<key>ypos</key>
+			<real>90</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://dingis.me</string>
+</dict>
+</plist>
