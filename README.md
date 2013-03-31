@@ -24,7 +24,7 @@ Quick preview your dribbble static.
 ![Dribbble][4]
 
 
-[Download Link][4]
+[Download Link][5]
 
 
 ## Get App Icons
@@ -32,7 +32,7 @@ Quick preview your dribbble static.
 Quick download app icons from App Store.
 
 
-[Download Link][5]
+[Download Link][6]
 
 
 
@@ -48,4 +48,4 @@ Created by @[dingyi](https://twitter.com/dingyi 'Contact me on Twitter') under [
 [3]: https://github.com/dingyi/Alfred-Workflows/raw/master/Dribbble/preview1.png
 [4]: https://github.com/dingyi/Alfred-Workflows/raw/master/Dribbble/preview2.png
 [5]: https://github.com/dingyi/Alfred-Workflows/raw/master/Dribbble/Dribbble.alfredworkflow
-[6]: https://github.com/dingyi/Alfred-Workflows/raw/master/Dribbble/Dribbble.alfredworkflow
+[6]: https://github.com/dingyi/Alfred-Workflows/raw/master/Get%20App%20Icons/Get%20App%20Icons.alfredworkflow
