@@ -166,7 +166,7 @@ if ( $in != 'F' ){
 				<key>keyword</key>
 				<string>mydribbble</string>
 				<key>runningsubtext</key>
-				<string>hold on...</string>
+				<string>Hold on...</string>
 				<key>script</key>
 				<string>require_once('workflows.php');
 
@@ -189,9 +189,9 @@ $w-&gt;result(
 
 echo $w-&gt;toxml();</string>
 				<key>subtext</key>
-				<string>Show your Statics</string>
+				<string>Show Your Analytics</string>
 				<key>title</key>
-				<string>show your statics</string>
+				<string>show your analytics</string>
 				<key>type</key>
 				<integer>1</integer>
 				<key>withspace</key>
@@ -233,7 +233,7 @@ $w-&gt;result(
 
 echo $w-&gt;toxml();</string>
 				<key>subtext</key>
-				<string>Input A Username to search</string>
+				<string>Input A Username to Search</string>
 				<key>title</key>
 				<string>username</string>
 				<key>type</key>

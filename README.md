@@ -11,11 +11,11 @@
 
 ## Dribbble
 
-Quick preview your dribbble static.
+Quick preview your dribbble analytics.
 
 ### 1. Set your username with [set username] , eg. [set dingyi]
 
-### 2. use [mydribbble] to view your own static.
+### 2. use [mydribbble] to view your own analytics.
 
 ![Dribbble][3]
 
