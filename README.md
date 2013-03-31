@@ -13,13 +13,13 @@
 
 Quick preview your dribbble static.
 
-1. Set your username with [set username] , eg. [set dingyi]
+### 1. Set your username with [set username] , eg. [set dingyi]
 
-2. use [mydribbble] to view your own static.
+### 2. use [mydribbble] to view your own static.
 
 ![Dribbble][3]
 
-3. use [dribbble username] to view everyone. eg. [dribbble simplebits]
+### 3. use [dribbble username] to view everyone. eg. [dribbble simplebits]
 
 ![Dribbble][4]
 
