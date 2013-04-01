@@ -17,6 +17,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>6B22A07A-BB69-42A9-8FF3-A5FA84571A6D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>043A2A7A-9209-486E-9DE4-9A745F7F5C81</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>75CBB6B3-1AED-4DA3-84FC-16EB23C9C1CE</key>
 		<array>
 			<dict>
@@ -42,23 +53,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>from get import getIcons
-
-print(getIcons("{query}"))</string>
-				<key>type</key>
-				<integer>3</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>75CBB6B3-1AED-4DA3-84FC-16EB23C9C1CE</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -74,6 +68,23 @@ print(getIcons("{query}"))</string>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>043A2A7A-9209-486E-9DE4-9A745F7F5C81</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>from get import getIcons
+
+print(getIcons("{query}"))</string>
+				<key>type</key>
+				<integer>3</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>75CBB6B3-1AED-4DA3-84FC-16EB23C9C1CE</string>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -98,6 +109,29 @@ print(getIcons("{query}"))</string>
 			<key>uid</key>
 			<string>4C429E01-A0A3-4324-BE18-754C623D1C52</string>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>hotkey</key>
+				<integer>34</integer>
+				<key>hotmod</key>
+				<integer>1835008</integer>
+				<key>hotstring</key>
+				<string>I</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>6B22A07A-BB69-42A9-8FF3-A5FA84571A6D</string>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -106,17 +140,22 @@ print(getIcons("{query}"))</string>
 		<key>043A2A7A-9209-486E-9DE4-9A745F7F5C81</key>
 		<dict>
 			<key>ypos</key>
-			<real>190</real>
+			<real>220</real>
 		</dict>
 		<key>4C429E01-A0A3-4324-BE18-754C623D1C52</key>
 		<dict>
 			<key>ypos</key>
-			<real>190</real>
+			<real>220</real>
+		</dict>
+		<key>6B22A07A-BB69-42A9-8FF3-A5FA84571A6D</key>
+		<dict>
+			<key>ypos</key>
+			<real>220</real>
 		</dict>
 		<key>75CBB6B3-1AED-4DA3-84FC-16EB23C9C1CE</key>
 		<dict>
 			<key>ypos</key>
-			<real>190</real>
+			<real>220</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
