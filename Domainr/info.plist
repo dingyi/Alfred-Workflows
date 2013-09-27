@@ -43,7 +43,7 @@
 				<string>require_once('workflows.php');
 $w = new Workflows();
 $query = urlencode( "{query}" );
-$url = "http://domai.nr/api/json/search?q=$query";
+$url = "https://domai.nr/api/json/search?q=$query";
 $domains = $w-&gt;request( $url );
 $domains = json_decode( $domains );
 
