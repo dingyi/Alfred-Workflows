@@ -43,7 +43,7 @@
 				<string>require_once('workflows.php');
 $w = new Workflows();
 $query = urlencode( "{query}" );
-$url = "https://api.domainr.com/v1/search?client_id={your-mashape-key}&q=$query";
+$url = "https://domainr.p.mashape.com/v1/search?mashape-key=AkuVf2rVXOmshqvTGDKW7TmvKRtfp1kdBUYjsnqnrJp3ZiJCyF&q=$query";
 $domains = $w-&gt;request( $url );
 $domains = json_decode( $domains );
 
@@ -120,6 +120,6 @@ echo $w-&gt;toxml();</string>
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string>http://dingis.me</string>
+	<string>http://ding.one</string>
 </dict>
 </plist>
